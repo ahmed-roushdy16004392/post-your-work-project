@@ -123,7 +123,7 @@ def user_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-
+# Entry point: runs the interactive bikeshare data exploration loop
 def main():
     # Keep prompting the user until they choose not to restart
     while True:
