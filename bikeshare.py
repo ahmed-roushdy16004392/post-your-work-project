@@ -27,7 +27,8 @@ def get_filters():
     # get user input for day of week (all, monday, tuesday, ... sunday)
 
 
-    print('-'*40)
+    SEPARATOR = '-' * 40
+    print(SEPARATOR)
     return city, month, day
 
 
@@ -48,9 +49,11 @@ def load_data(city, month, day):
     return df
 
 
-def time_stats(df):
+def time_stats(bikeshare_df):
     """Displays statistics on the most frequent times of travel."""
 
+    # Renamed parameter from 'df' to 'bikeshare_df' for clarity
+    
     print('\nCalculating The Most Frequent Times of Travel...\n')
     start_time = time.time()
 
@@ -132,8 +135,8 @@ def main():
         trip_duration_stats(df)
         user_stats(df)
 
-        restart = input('\nWould you like to restart? Enter yes or no.\n')
-        if restart.lower() != 'yes':
+        user_wants_restart = input('\nWould you like to restart? Enter yes or no.\n')
+        if user_wants_restart.lower() != 'yes':
             break
 
 
