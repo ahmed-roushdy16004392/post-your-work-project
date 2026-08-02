@@ -2,6 +2,7 @@ import time
 import pandas as pd
 import numpy as np
 
+# Dictionary mapping each city name to its corresponding data file
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
@@ -17,7 +18,8 @@ def get_filters():
     """
     print('Hello! Let\'s explore some US bikeshare data!')
     # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
-
+    
+    # TODO: prompt the user and validate the input against CITY_DATA keys
 
     # get user input for month (all, january, february, ... , june)
 
@@ -40,6 +42,7 @@ def load_data(city, month, day):
     Returns:
         df - Pandas DataFrame containing city data filtered by month and day
     """
+    # Load the city's CSV file into a DataFrame, then apply month/day filters if requested
 
 
     return df
@@ -119,6 +122,7 @@ def user_stats(df):
 
 
 def main():
+    # Keep prompting the user until they choose not to restart
     while True:
         city, month, day = get_filters()
         df = load_data(city, month, day)
