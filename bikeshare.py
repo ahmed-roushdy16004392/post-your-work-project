@@ -46,9 +46,11 @@ def load_data(city, month, day):
     return df
 
 
-def time_stats(df):
+def time_stats(bikeshare_df):
     """Displays statistics on the most frequent times of travel."""
 
+    # Renamed parameter from 'df' to 'bikeshare_df' for clarity
+    
     print('\nCalculating The Most Frequent Times of Travel...\n')
     start_time = time.time()
 
