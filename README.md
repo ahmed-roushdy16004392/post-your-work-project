@@ -18,6 +18,7 @@ This is a personal learning project for the Udacity program and isn't currently 
 ## Credits
 
 This project is based on the Udacity "Explore US Bikeshare Data" project template.
+Special thanks to the Udacity mentors and reviewers for their guidance.
 
 ## Date created
 
